@@ -1,0 +1,45 @@
+s="Hi there sam!"
+s.split()
+['Hi', 'there', 'sam!']
+planet="Earth"
+diameter="12742"
+print("The diameter of{} is {} kilometers.".format(planet,diameter))
+The diameter ofEarth is 12742 kilometers.
+d= {'k1':[1,2,3,{'trichy':['oh','man','inception',{'target':[1,2,3,'hello']}]}]}
+
+d ['k1'][3]['trichy'][3]['target'][3]
+'hello'
+import numpy as np
+np.zeros(10)
+array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
+np.ones(10)*5
+array([5., 5., 5., 5., 5., 5., 5., 5., 5., 5.])
+print(np.arange(20,36,2))
+[20 22 24 26 28 30 32 34]
+np.arange(0,9).reshape((3,3))
+array([[0, 1, 2],
+       [3, 4, 5],
+       [6, 7, 8]])
+a= np.array([1,2,3])
+b= np.array([4,5,6])
+np.concatenate((a,b))
+array([1, 2, 3, 4, 5, 6])
+import pandas as pd
+data={'name':['tom','jerry','sam'],'age':[15,12,14]}
+
+pd.DataFrame(data)
+name	age
+0	tom	15
+1	jerry	12
+2	sam	14
+import  datetime
+pd.to_datetime(pd.Series(["Jan 1,2022","2023-02-10",]))
+0   2022-01-01
+1   2023-02-10
+dtype: datetime64[ns]
+lists=[[1,'aaa',22],[2,'bbb',25],[3,'ccc',24]]
+pd.DataFrame(lists)
+0	1	2
+0	1	aaa	22
+1	2	bbb	25
+2	3	ccc	24
